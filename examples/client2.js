@@ -11,7 +11,7 @@ gc.start()
 
 var tc = new Client(gc, {})
 
-var cnt = 10000
+var cnt = 20000
 var reps = 0
 
 setTimeout(() => {
