@@ -18,7 +18,7 @@ setInterval(function() {
   })
 }, 1000)
 
-service.on('request', (rid, type, payload, handler) => {
+client.on('request', (rid, type, payload, handler) => {
   console.log('HERE', rid, type, payload)
   handler.reply('world')
 })
