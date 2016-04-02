@@ -15,17 +15,14 @@ var reqs = 1000
 var reps = 0
 
 setTimeout(() => {
-  link.lookup('test', { timeout: 1000 }, (err, data) => {
-    var d1 = new Date()
-    for (var i = 0; i < reqs; i++) {
-      client.request(data[0], 'test', 'hello', (err, data) => {
-        //console.log("here", err, data)
-        if (++reps === reqs) {
-          var d2 = new Date()
-          console.log(d2 - d1) 
-        }
-      })
-    }
-    console.log(err, data)
-  })
+  var d1 = new Date()
+  for (var i = 0; i < reqs; i++) {
+    client.request('test', 'hello', {}, (err, data) => {
+      //console.log("here", err, data)
+      if (++reps === reqs) {
+        var d2 = new Date()
+        console.log(d2 - d1) 
+      }
+    })
+  }
 }, 2000)
