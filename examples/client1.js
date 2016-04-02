@@ -13,12 +13,12 @@ var client = new Client(link, {})
 var service = client.listen('req', 'tcp://127.0.0.1:5000')
 
 setInterval(function() {
-  client.grape.announce('test', service.port, {}, () => {
+  client.announce('test', service.port, {}, () => {
     console.log('announced')
   })
 }, 1000)
 
 client.on('request', (rid, type, payload, handler) => {
-  console.log('HERE', rid, type, payload)
+  //console.log('client1', rid, type, payload)
   handler.reply('world')
 })
