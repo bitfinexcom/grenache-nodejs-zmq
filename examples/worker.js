@@ -10,10 +10,10 @@ var link = new Base.Link({
 link.start()
 
 var worker = new Client(link, {})
-var service = client.listen('req', 'tcp://127.0.0.1:5000')
+var service = worker.listen('req', 'tcp://127.0.0.1:5000')
 
 setInterval(function() {
-  client.announce('test', service.port, {}, () => {
+  worker.announce('test', service.port, {}, () => {
     console.log('announced')
   })
 }, 1000)
