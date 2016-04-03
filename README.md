@@ -2,6 +2,13 @@
 
 ### Setup
 
+#### Install 
+```
+npm install --save grenache-nodejs-zmq
+```
+
+#### Other Requirements
+
 Install `Grenache Grape`: https://github.com/bitfinexcom/grenache-grape
 
 ```
