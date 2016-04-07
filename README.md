@@ -1,4 +1,7 @@
-# Grenache Node.JS ZeroMQ implementation
+# [Grenache](https://github.com/bitfinexcom/grenache) Node.JS ZeroMQ implementation
+
+### Details
+- [Project Homepage](https://github.com/bitfinexcom/grenache) 
 
 ### Setup
 
