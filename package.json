@@ -17,7 +17,7 @@
     "lodash": "~4.11.2",
     "uuid": "~2.0.1",
     "underscore.string": "~3.3.4",
-    "zmq": "~2.15.0"
+    "zmq": "~2.15.1"
   },
   "engine": {
     "node": ">=0.10"
