@@ -20,7 +20,7 @@
     "zmq": "~2.15.1"
   },
   "engine": {
-    "node": ">=0.10"
+    "node": ">=4.4"
   },
   "main": "index.js",
   "directories": {
