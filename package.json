@@ -1,6 +1,6 @@
 {
   "name": "grenache-nodejs-zmq",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": false,
   "description": "Granache Grape",
   "author": "prdn <paolo@bitfinex.com> (https://bitfinex.com/)",
@@ -11,7 +11,7 @@
     "micro-services"
   ],
   "dependencies": {
-    "async": "~2.0.0",
+    "async": "~2.0.1",
     "debug": "~2.2.0",
     "grenache-nodejs-base": "git+https://github.com/bitfinexcom/grenache-nodejs-base.git",
     "lodash": "~4.13.1",
@@ -20,7 +20,7 @@
     "zmq": "~2.15.3"
   },
   "engine": {
-    "node": ">=4.4"
+    "node": ">=6.0"
   },
   "main": "index.js",
   "directories": {
